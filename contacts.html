@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for Wong Kar-wai tribute site">
+    <title>Contact | Wong Kar-wai</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700;900&family=DM+Sans:wght@400;500;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="contacts-page">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">WONG KAR-WAI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="biography.html">Biography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="filmography.html">Filmography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="style.html">Visual Style</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="awards.html">Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacts.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="page-title fade-in-scroll">CONTACT</h1>
+                    <p class="hero-subtitle fade-in-scroll">Get in Touch</p>
+                    <div class="title-divider"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    
+                    <!-- Introduction Text -->
+                    <div class="contact-intro fade-in-scroll">
+                        <p class="intro-text">
+                            This is a tribute website dedicated to the work of Wong Kar-wai. If you would like to share your thoughts about his films, suggest improvements to this site, or connect with fellow admirers of his cinema, please fill out the form below.
+                        </p>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form id="contact-form" class="contact-form fade-in-scroll" novalidate>
+                        
+                        <!-- Name Field -->
+                        <div class="mb-4">
+                            <label for="name" class="form-label">Name *</label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                id="name" 
+                                name="name" 
+                                placeholder="Your full name"
+                                required
+                            >
+                            <div class="invalid-feedback">
+                                Please enter your name.
+                            </div>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="mb-4">
+                            <label for="email" class="form-label">Email *</label>
+                            <input 
+                                type="email" 
+                                class="form-control" 
+                                id="email" 
+                                name="email" 
+                                placeholder="your.email@example.com"
+                                required
+                            >
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <!-- Subject Field -->
+                        <div class="mb-4">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                id="subject" 
+                                name="subject" 
+                                placeholder="Subject of your message"
+                            >
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea 
+                                class="form-control" 
+                                id="message" 
+                                name="message" 
+                                rows="6" 
+                                placeholder="Share your thoughts about Wong Kar-wai's cinema..."
+                                required
+                            ></textarea>
+                            <div class="invalid-feedback">
+                                Please enter your message.
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="text-center">
+                            <button type="submit" class="btn-submit">Send Message</button>
+                        </div>
+
+                        <!-- Success Message (hidden by default) -->
+                        <div id="success-message" class="alert alert-success mt-4" style="display: none;">
+                            <strong>Thank you!</strong> Your message has been sent successfully.
+                        </div>
+
+                        <!-- Error Message (hidden by default) -->
+                        <div id="error-message" class="alert alert-danger mt-4" style="display: none;">
+                            <strong>Error!</strong> Please check the form and try again.
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="info-box fade-in-scroll">
+                        <h3 class="info-title">About This Site</h3>
+                        <p class="info-text">
+                            This is an unofficial fan-made tribute to Wong Kar-wai and his extraordinary body of work. All film rights belong to their respective copyright holders. This site is created purely out of admiration for one of cinema's greatest poets.
+                        </p>
+                        <p class="info-text">
+                            For official information about Wong Kar-wai's films, please visit the websites of Jet Tone Films and distributors such as The Criterion Collection.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="contact-quote-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <blockquote class="contact-quote fade-in-scroll">
+                        <p class="quote-text">"The sea is the same. The sea never changes. It's always there. You can count on it."</p>
+                        <footer class="quote-author">— Wong Kar-wai, <cite>In the Mood for Love</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-text">&copy; 2025 Wong Kar-wai Tribute. All rights reserved.</p>
+                    <p class="footer-links">
+                        <a href="index.html">Home</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the cinematic universe of Wong Kar-wai">
+    <title>Wong Kar-wai | Filmmaker</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700;900&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="index-page">
+    
+    <!-- Initial Quote Section -->
+    <section id="quote-section" class="full-screen-section active">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <blockquote class="quote fade-in">
+                        <p class="quote-text">"If memories could be canned, would they also have expiry dates? If so, I hope they last for centuries."</p>
+                        <footer class="quote-author">— Wong Kar-wai, <cite>Chungking Express</cite></footer>
+                    </blockquote>
+                    <button id="watch-btn" class="btn-watch fade-in-delay">WATCH</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section (hidden initially) -->
+
+    <!-- Video Section (hidden initially) -->
+    <section id="video-section" class="full-screen-section" style="display:none;">
+    <div class="video-container">
+        <iframe 
+        id="intro-video"
+        class="fullscreen-video"
+        src="https://player.vimeo.com/video/1135144532?background=1&autoplay=0&loop=1&muted=1"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen>
+        </iframe>
+
+        <!-- Прозрачный слой для кликов -->
+        <div class="video-overlay click-catcher"></div>
+    </div>
+    </section>
+
+
+    <!-- Name Reveal Section (shown after video) -->
+    <section id="name-section" class="full-screen-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-12 text-center">
+                    <h1 class="director-name fade-in-slow">WONG KAR-WAI</h1>
+                    <p class="director-subtitle fade-in-slower">王家衛</p>
+                    <a href="biography.html" class="btn-explore fade-in-slowest">EXPLORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
